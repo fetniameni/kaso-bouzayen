@@ -111,18 +111,18 @@ const tracks: Track[] = [
   { id: "67", title: "OUENZA - JOUJ Ft. KASO", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/clLJiQB2QBo/maxresdefault.jpg", youtubeId: "clLJiQB2QBo", feat: true },
 
   // 2022 feat song
-  { id: "68", title: "El Castro ft. Kaso - Na9es Wala Nzid", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/1YEJGeks46c/maxresdefault.jpg", youtubeId: "1YEJGeks46c", feat: true },
+  { id: "68", title: "El Castro ft. Kaso - Na9es Wala Nzid", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/1YEJGeks46c/hqdefault.jpg", youtubeId: "1YEJGeks46c", feat: true },
 
   // 2021 feat songs
   { id: "69", title: "El Castro feat Kaso - Janna/Nar (Be U Album)", year: "2021", type: "Album", thumbnail: "https://img.youtube.com/vi/LX32bCxZ6SA/maxresdefault.jpg", youtubeId: "LX32bCxZ6SA", feat: true },
   { id: "70", title: "MIZO-H Ft KASO - Mahachtich", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/lqXLuqK0_d0/maxresdefault.jpg", youtubeId: "lqXLuqK0_d0", feat: true },
-  { id: "71", title: "Redstar Radi - The Good Man ft Kaso", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/Hhx-xz9aqXs/maxresdefault.jpg", youtubeId: "Hhx-xz9aqXs", feat: true },
+  { id: "71", title: "Redstar Radi - The Good Man ft Kaso", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/Hhx-xz9aqXs/hqdefault.jpg", youtubeId: "Hhx-xz9aqXs", feat: true },
 
   // 2020 feat songs
   { id: "72", title: "Artmasta - Hooligains ft. El Castro, Kaso", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/Xr5JtBAZNaw/maxresdefault.jpg", youtubeId: "Xr5JtBAZNaw", feat: true },
   { id: "73", title: "El Castro ft. Kaso & 2Two - Faza", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/s-nBds3ULCI/maxresdefault.jpg", youtubeId: "s-nBds3ULCI", feat: true },
   { id: "74", title: "El Castro x Kaso - خالد (Be U Album)", year: "2020", type: "Album", thumbnail: "https://img.youtube.com/vi/1MokYtYMrfk/maxresdefault.jpg", youtubeId: "1MokYtYMrfk", feat: true },
-  { id: "75", title: "Castro x Kaso - Maw Fibelek", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/iRJFx4glruo/maxresdefault.jpg", youtubeId: "iRJFx4glruo", feat: true },
+  { id: "75", title: "Castro x Kaso - Maw Fibelek", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/iRJFx4glruo/hqdefault.jpg", youtubeId: "iRJFx4glruo", feat: true },
   { id: "76", title: "El Castro - Mouch 9olto ft A.L.A & Kaso", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/fhzQ5kg_M9w/maxresdefault.jpg", youtubeId: "fhzQ5kg_M9w", feat: true },
   { id: "77", title: "NVST X KASO X 2Two - AKHTANA NO", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/9wTOp-YGYRg/maxresdefault.jpg", youtubeId: "9wTOp-YGYRg", feat: true },
   { id: "78", title: "NVST X KASO - Sahbi | صاحبي", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/XEw1BDnRUZI/maxresdefault.jpg", youtubeId: "XEw1BDnRUZI", feat: true },
