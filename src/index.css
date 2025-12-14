@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Cairo:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 24 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom design tokens */
+    --orange-glow: 0 0 12px hsl(24 100% 50%);
+    --orange-glow-lg: 0 0 30px hsl(24 100% 50% / 0.5);
+    --text-shadow-glow: 0 0 20px hsl(24 100% 50% / 0.6);
+    
+    --gradient-dark-overlay: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 0%) 0%, hsl(0 0% 5%) 100%);
+    
+    --font-heading: 'Montserrat', sans-serif;
+    --font-arabic: 'Cairo', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-heading);
+  }
+
+  /* Arabic text styling */
+  .rtl-text {
+    direction: rtl;
+    font-family: var(--font-arabic);
+  }
+
+  .ltr-text {
+    direction: ltr;
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .orange-glow {
+    filter: drop-shadow(var(--orange-glow));
+  }
+
+  .orange-glow-lg {
+    filter: drop-shadow(var(--orange-glow-lg));
+  }
+
+  .text-glow {
+    text-shadow: var(--text-shadow-glow);
+  }
+
+  .gradient-overlay {
+    background: var(--gradient-dark-overlay);
+  }
+
+  .section-gradient {
+    background: var(--gradient-section);
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow:hover {
+    filter: drop-shadow(var(--orange-glow-lg));
+    transform: scale(1.02);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 5%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(24 100% 50%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(24 100% 60%);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px hsl(24 100% 50%));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px hsl(24 100% 50%));
+  }
+}
+
+@keyframes pulse-glow-slow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px hsl(24 100% 50% / 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 40px hsl(24 100% 50%));
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-pulse-glow-slow {
+  animation: pulse-glow-slow 2s ease-in-out infinite;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: hsl(0 0% 10%);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(24 100% 50% / 0.5);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(24 100% 50%);
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.6s ease-out forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
