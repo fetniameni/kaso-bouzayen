@@ -6,7 +6,7 @@ import MusicSection from "@/components/MusicSection";
 import LyricsSection from "@/components/LyricsSection";
 import ComingSoonSection from "@/components/ComingSoonSection";
 import ContactSection from "@/components/ContactSection";
-import EventsSection from './components/EventsSection';
+import EventsSection from "@/components/EventsSection";
 
 const Index = () => {
   return (
