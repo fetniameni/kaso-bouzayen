@@ -42,11 +42,16 @@ const EventsSection = () => (
             key={index}
             className="group bg-card border border-border/50 rounded-2xl overflow-hidden hover:border-primary hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)] transition-all duration-300"
           >
-            <img
-              src={event.poster}
-              alt={event.title}
-              className="w-full h-auto object-cover"
-            />
+            {/* البوستر بنفس السايز الثابت */}
+            <div className="relative w-full h-96 overflow-hidden rounded-t-2xl">
+              <img
+                src={event.poster}
+                alt={event.title}
+                className="absolute inset-0 w-full h-full object-cover object-center"
+              />
+            </div>
+
+            {/* التفاصيل تحت البوستر */}
             <div className="p-6">
               <h3 className="font-heading font-bold text-2xl text-foreground mb-2">
                 {event.title}
