@@ -102,6 +102,33 @@ const tracks: Track[] = [
   { id: "61", title: "ENNARD", year: "2025", type: "EP", thumbnail: "https://img.youtube.com/vi/150BYTHxbyY/maxresdefault.jpg", youtubeId: "150BYTHxbyY" },
   { id: "62", title: "Ghalet", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/p7vqVi7v2eU/maxresdefault.jpg", youtubeId: "p7vqVi7v2eU" },
   { id: "63", title: " Ya Baba", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/zZ7ulF-HZ0M/maxresdefault.jpg", youtubeId: "zZ7ulF-HZ0M" },
+  // 2025 feat songs
+  { id: "64", title: "Mouka - Weld Ommi ft KASO", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/VVJlSfQlJ1w/maxresdefault.jpg", youtubeId: "VVJlSfQlJ1w", feat: true },
+  { id: "65", title: "Si Lemhaf & KASO - Ki Nrak", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/6XVpFgOHGV4/maxresdefault.jpg", youtubeId: "6XVpFgOHGV4", feat: true },
+  { id: "66", title: "EMP1RE - KIFKIF Feat. KASO", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/JyT4bTqtlU4/maxresdefault.jpg", youtubeId: "JyT4bTqtlU4", feat: true },
+
+  // 2023 feat song
+  { id: "67", title: "OUENZA - JOUJ Ft. KASO", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/clLJiQB2QBo/maxresdefault.jpg", youtubeId: "clLJiQB2QBo", feat: true },
+
+  // 2022 feat song
+  { id: "68", title: "El Castro ft. Kaso - Na9es Wala Nzid", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/1YEJGeks46c/maxresdefault.jpg", youtubeId: "1YEJGeks46c", feat: true },
+
+  // 2021 feat songs
+  { id: "69", title: "El Castro feat Kaso - Janna/Nar (Be U Album)", year: "2021", type: "Album", thumbnail: "https://img.youtube.com/vi/LX32bCxZ6SA/maxresdefault.jpg", youtubeId: "LX32bCxZ6SA", feat: true },
+  { id: "70", title: "MIZO-H Ft KASO - Mahachtich", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/lqXLuqK0_d0/maxresdefault.jpg", youtubeId: "lqXLuqK0_d0", feat: true },
+  { id: "71", title: "Redstar Radi - The Good Man ft Kaso", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/Hhx-xz9aqXs/maxresdefault.jpg", youtubeId: "Hhx-xz9aqXs", feat: true },
+
+  // 2020 feat songs
+  { id: "72", title: "Artmasta - Hooligains ft. El Castro, Kaso", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/Xr5JtBAZNaw/maxresdefault.jpg", youtubeId: "Xr5JtBAZNaw", feat: true },
+  { id: "73", title: "El Castro ft. Kaso & 2Two - Faza", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/s-nBds3ULCI/maxresdefault.jpg", youtubeId: "s-nBds3ULCI", feat: true },
+  { id: "74", title: "El Castro x Kaso - خالد (Be U Album)", year: "2020", type: "Album", thumbnail: "https://img.youtube.com/vi/1MokYtYMrfk/maxresdefault.jpg", youtubeId: "1MokYtYMrfk", feat: true },
+  { id: "75", title: "Castro x Kaso - Maw Fibelek", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/iRJFx4glruo/maxresdefault.jpg", youtubeId: "iRJFx4glruo", feat: true },
+  { id: "76", title: "El Castro - Mouch 9olto ft A.L.A & Kaso", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/fhzQ5kg_M9w/maxresdefault.jpg", youtubeId: "fhzQ5kg_M9w", feat: true },
+  { id: "77", title: "NVST X KASO X 2Two - AKHTANA NO", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/9wTOp-YGYRg/maxresdefault.jpg", youtubeId: "9wTOp-YGYRg", feat: true },
+  { id: "78", title: "NVST X KASO - Sahbi | صاحبي", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/XEw1BDnRUZI/maxresdefault.jpg", youtubeId: "XEw1BDnRUZI", feat: true },
+
+  // 2019 feat song
+  { id: "79", title: "SHVDY X KASO - WALLAH / والله", year: "2019", type: "Single", thumbnail: "https://img.youtube.com/vi/SV7YlJt5aVE/maxresdefault.jpg", youtubeId: "SV7YlJt5aVE", feat: true },
 ];
 const years = ["2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 const types: TrackType[] = ["Single", "Album", "EP", "Freestyle"];
