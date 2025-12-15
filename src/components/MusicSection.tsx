@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { Play, X, ChevronLeft, ChevronRight, Repeat } from "lucide-react";
 
 // YouTube Player types
@@ -142,6 +142,7 @@ const MusicSection = () => {
   const playerRef = useRef<any>(null);
   const playerContainerRef = useRef<HTMLDivElement>(null);
   const autoplayRef = useRef<boolean>(false);
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   // Get available types for the selected year
   const availableTypes = selectedYear
@@ -149,13 +150,32 @@ const MusicSection = () => {
     : [];
 
   // Filter tracks based on selections
-  const filteredTracks = selectedYear && selectedType
-    ? selectedType === "All"
-      ? tracks.filter(track => track.year === selectedYear)
-      : selectedType === "Feat"
-        ? tracks.filter(track => track.year === selectedYear && track.feat === true)
-        : tracks.filter(track => track.year === selectedYear && track.type === selectedType)
-    : [];
+  const filteredTracks = React.useMemo(() => {
+    let tracksList = tracks;
+
+    // فلتر السنة
+    if (selectedYear) {
+      tracksList = tracksList.filter(track => track.year === selectedYear);
+    }
+
+    // فلتر النوع (All, Single, Album, EP, Freestyle, Feat)
+    if (selectedType && selectedType !== "All") {
+      if (selectedType === "Feat") {
+        tracksList = tracksList.filter(track => track.feat === true);
+      } else {
+        tracksList = tracksList.filter(track => track.type === selectedType);
+      }
+    }
+
+    // فلتر البحث (بالعنوان)
+    if (searchTerm) {
+      tracksList = tracksList.filter(track => 
+        track.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    return tracksList;
+  }, [selectedYear, selectedType, searchTerm]);
 
   const openModal = (youtubeId: string) => {
     const trackIndex = filteredTracks.findIndex(t => t.youtubeId === youtubeId);
@@ -265,6 +285,17 @@ const MusicSection = () => {
           Music
         </h2>
         <div className="w-24 h-1 bg-primary mx-auto mb-12" />
+
+        {/* Search Bar */}
+        <div className="max-w-md mx-auto mb-12">
+          <input
+            type="text"
+            placeholder="ابحث عن أغنية بالعنوان..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-6 py-4 rounded-full bg-card border border-border focus:border-primary focus:outline-none text-foreground placeholder:text-muted-foreground text-lg shadow-lg"
+          />
+        </div>
 
         {/* Year Filter - Always Visible */}
         <div className="text-center mb-8">
