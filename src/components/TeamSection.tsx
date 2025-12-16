@@ -12,9 +12,9 @@ const teamMembers = [
     initial: "W",
   },
   {
-    name: "Ben Aziza",
+    name: "Youssef Ben Aziza",
     instagram: "https://www.instagram.com/ben_aziza",
-    initial: "B",
+    initial: "Y",
   },
   {
     name: "Ahmed Aloui",
@@ -25,6 +25,18 @@ const teamMembers = [
     name: "Oussama Azzi",
     instagram: "https://www.instagram.com/machi_fenane?igsh=Mjc0cjNwczJzc3Fn",
     initial: "O",
+  },
+  
+  {
+    name: "Foued Abidi",
+    instagram: "https://www.instagram.com/fanshaaaaaaaaa?igsh=ZnJ1MGRuYXAxN3Ix",
+    initial: "F",
+  },
+  
+  {
+    name: "Malek Toujeni",
+    instagram: "https://www.instagram.com/malek_toujeni?igsh=YWoxdm96ZjBuNjQ=",
+    initial: "M",
   },
 ];
 
