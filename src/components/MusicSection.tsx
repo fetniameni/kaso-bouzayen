@@ -129,6 +129,9 @@ const tracks: Track[] = [
 
   // 2019 feat song
   { id: "79", title: "SHVDY X KASO - WALLAH / والله", year: "2019", type: "Single", thumbnail: "https://img.youtube.com/vi/SV7YlJt5aVE/maxresdefault.jpg", youtubeId: "SV7YlJt5aVE", feat: true },
+
+  { id: "80", title: "Michael | CESAR ART SHOW", year: "2025", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/GjTZlTqAvbs/maxresdefault.jpg", youtubeId: "GjTZlTqAvbs", feat: true },
+
 ];
 const years = ["2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 const types: TrackType[] = ["Single", "Album", "EP", "Freestyle"];
