@@ -17,7 +17,7 @@ const events = [
   },
   {
     title: "BelAir Showcase",
-    date: "12 Dec 2025",
+    date: "19 Dec 2025",
     location: "BelAir",
     artists: "Kaso with Jawher Merdassi",
     poster: "/belair-poster.jpg"
