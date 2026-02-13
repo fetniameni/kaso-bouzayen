@@ -131,9 +131,17 @@ const tracks: Track[] = [
   { id: "79", title: "SHVDY X KASO - WALLAH / والله", year: "2019", type: "Single", thumbnail: "https://img.youtube.com/vi/SV7YlJt5aVE/maxresdefault.jpg", youtubeId: "SV7YlJt5aVE", feat: true },
 
   { id: "80", title: "Michael | CESAR ART SHOW", year: "2025", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/GjTZlTqAvbs/maxresdefault.jpg", youtubeId: "GjTZlTqAvbs", feat: true },
-
+  // 2026
+  { id: "81", title: " 6 CHHOUR", year: "2026", type: "EP", thumbnail: "https://img.youtube.com/vi/FjX3-uPejwQ/hqdefault.jpg", youtubeId: "FjX3-uPejwQ" },
+  { id: "82", title: "100K", year: "2026", type: "EP", thumbnail: "https://img.youtube.com/vi/OT8hu7NBWDA/maxresdefault.jpg", youtubeId: "OT8hu7NBWDA" },
+  { id: "83", title: "OMMA", year: "2026", type: "EP", thumbnail: "https://img.youtube.com/vi/3UwctR5NBJE/maxresdefault.jpg", youtubeId: "3UwctR5NBJE" },
+  { id: "84", title: "DHOLOM", year: "2026", type: "EP", thumbnail: "https://img.youtube.com/vi/q19oKqppDmI/maxresdefault.jpg", youtubeId: "q19oKqppDmI" },
+  { id: "85", title: "LEZEM NABRA", year: "2026", type: "EP", thumbnail: "https://img.youtube.com/vi/oZlC1eChzzM/maxresdefault.jpg", youtubeId: "oZlC1eChzzM" },
+  { id: "86", title: "ABED BARK", year: "2026", type: "EP", thumbnail: "https://img.youtube.com/vi/iA7Eq1mrgW4/maxresdefault.jpg", youtubeId: "iA7Eq1mrgW4" },
+  { id: "87", title: "THENNI MARRA", year: "2026", type: "EP", thumbnail: "https://img.youtube.com/vi/WpOkRg_ZL4o/maxresdefault.jpg", youtubeId: "WpOkRg_ZL4o" },
+  
 ];
-const years = ["2019", "2020", "2021", "2022", "2023", "2024", "2025"];
+const years = ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"];
 const types: TrackType[] = ["Single", "Album", "EP", "Freestyle"];
 
 const MusicSection = () => {
